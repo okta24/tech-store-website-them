@@ -1,0 +1,798 @@
+@font-face {
+    font-family:iran-sans;
+    src: url('../fonts/iranian-sans.eot?#') format('eot'), /* IE6–8 */
+    url('../fonts/iranian-sans.woff') format('woff'), /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+    url('../fonts/iranian-sans.ttf') format('truetype');
+    /* Saf3—5, Chrome4+, FF3.5, Opera 10+ */
+}
+
+body {
+    font-family: iran-sans;
+    font-size: 14px;
+    line-height: 18px;
+    color: #333;
+    direction: rtl;
+    background-color: #f9f9f9;
+}
+ul{
+    list-style: none;
+}
+a{
+    color: #999;
+    text-decoration: none !important;
+}
+
+/*---------------hedear-----*/
+#header-main{
+    padding: 0px;
+    background-color: #fff;
+}
+#header-row1{
+  
+   background:#000;
+   
+    /*box-shadow: 1px 1px 3px black;**/
+}
+#brand{
+    display: inline-block;
+    color: #eee;
+}
+#login{
+    float: left;
+}
+#sign-in{
+    display: inline-block;
+    padding: 0 10px;
+    line-height: 2;
+    color: #eee;
+    transition: 0.2s;
+    border-radius: 12px 12px;
+    margin: 3px 0px;
+    background: #428bca;
+    cursor: pointer;
+}
+#sign-in:hover{
+    color:  #428bca;
+    background-color: #eee;
+}
+#register{
+   display: inline-block;
+    padding: 0 10px;
+    line-height: 2;
+    color: #eee;
+    transition: 0.2s;
+    border-radius: 12px 12px;
+    margin: 3px 0px;
+    background: #428bca;
+    cursor: pointer;
+}
+#register:hover{
+    color:  #428bca;
+    background-color: #eee;
+}
+#logo-img{
+    width: 120px;
+}
+
+.navbar-nav > li > a {
+    color: white;
+}
+.navbar-nav > li > a:hover {
+    color:#ff4567;
+}
+ 
+ .affix {
+      top: 0;
+      width: 100%;
+      z-index: 10;
+  }
+
+  .affix + .container-fluid {
+      padding-top: 70px;
+  }
+
+.navbar {
+            padding-bottom: 5px;
+            margin-bottom: 0;
+            border-radius: 0;
+            border: none;
+            box-shadow:0px 2px 9px #999;
+        }
+        /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
+        
+        .row.content {
+            height: 450px
+        }
+        /* Set gray background color and 100% height */
+        
+        .sidenav {
+            padding-top: 20px;
+            background-color: #f1f1f1;
+            height: 100%;
+        }
+        /* Set black background color, white text and some padding */
+        
+        
+        /* On small screens, set height to 'auto' for sidenav and grid */
+        
+        @media screen and (max-width: 767px) {
+            .sidenav {
+                height: auto;
+                padding: 15px;
+            }
+            .row.content {
+                height: auto;
+            }
+        }
+
+
+
+/*----------end header -----------------*/
+/*--------start sidbar---*/
+
+#sidbar-div{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+/*------end sidbar-----------*/
+
+/*----------searach-------------*/
+#header-row2{
+   
+}
+#search-div{
+    padding-top: 15px;
+    width: 100%;
+}
+
+
+
+#search-loading{
+    z-index: 9;
+    border: none;
+    position: absolute;
+    top: 5px;
+    right: 7px;
+    
+}
+#search-btn{
+    z-index: 9;
+    border: none;
+    position: absolute;
+    top: 5px;
+    right: 7px;
+}
+
+#et-search{
+    border-radius: 5px;
+    width: 99%;
+    padding-right: 42px;
+    font-size: 14px;
+    height: 40px;
+}
+
+
+/* When the input field gets focus, change its width to 100% */
+input[type=text]:focus {
+    width: 99%;
+}
+.form-group{margin-bottom: 0px;}
+
+
+ 
+#khrid-col{
+    padding-top: 15px
+}
+/*--------ens search------*/
+
+/*--khrid --------------*/
+#cart-total{
+    background: #67af01;
+    display: block;
+    position: absolute;
+    left: 19px;
+    top: 17px;
+    width: 40px;
+    height: 34px;
+    line-height: 42px;
+    text-align: center;
+    color: #fff;
+    border-right: 1px solid #ccc;
+}
+#sopping-icon{
+    background: #67af01;
+    display: block;
+    position: absolute;
+    right: : 17px;
+    top: 17px;
+    width: 40px;
+    height: 34px;
+    line-height: 42px;
+    text-align: center;
+    color: #fff;
+}
+#kharid-btn{
+     background: #67af01;
+     color: #fff;
+     font-size: 14px;
+}
+.open > .dropdown-menu{
+    width: 100%;
+}
+/*--------row3 of header ---- togglee-nav-----*/
+
+#header-row3{
+    padding-top: 5px;
+}
+.navbar-toggle{
+
+}
+.navbar-toggle{
+   
+}
+.navbar-header{
+    float: left;
+}
+
+.navbar-collapse.collapse{
+    padding-bottom: 10px;
+}
+
+.navbar-default .navbar-nav > li : first-child{background: #EEFFAA;}
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus{
+color: #2345ff;
+background-color: #fff;
+}
+.navbar-default .navbar-nav > li > a:hover{
+    color: #2345ff;
+}
+.navbar-default .navbar-nav > li > a{
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+/*----------row3 header pishnahad-------*/
+#right-nav-div{
+    float: left;
+    margin-top: 10px;
+        margin-left: 10px;
+}
+#pishnahad{
+    display: inline-block;
+    padding: 0 10px;
+    line-height: 2;
+    color: #e71111;
+    transition: 0.2s;
+    border-radius: 12px 12px;
+    border: 1px solid #e71111;
+    cursor: pointer;
+    float: right;
+    margin-left: 5px;
+}
+#pishnahad:hover{
+    color: #c71111;
+}
+
+#favorits{
+    
+}
+.simple-link{
+    display: inline-block;
+    padding: 0 8px;
+    line-height: 2;
+    color: #777;
+    transition: 0.2s;
+    cursor: pointer;
+}
+.simple-link:hover{
+     color: #2345ff;
+}
+
+/*---------row 2 of right sidbar-- ul li-**/
+#div-bottom-of-slider2{
+    padding: 0px;
+    margin: 0px;
+}
+#div-bottom-of-slider2 ul{
+    padding: 10px;
+}
+#div-bottom-of-slider2 ul li{
+    display: inline-block;
+    border-left: 1px solid #ddd;
+}
+#div-bottom-of-slider2 ul li a{
+    padding: 5px 18px;
+    font-size: 14px;
+    
+}
+#div-bottom-of-slider2 ul li a:hover{
+    color: #2345ff;
+}
+/*--------------slider-------------*/
+div#slider-container1 .shadow-box .col-md-12{
+margin-bottom: 0px !important;
+}
+
+.tales {
+  width: 100%;
+}
+.carousel-inner{
+  width:100%;
+  max-height: 180px !important;
+}
+#slider-container{
+    padding: 0px;
+}
+.carousel-inner > .item > img, .carousel-inner > .item > a > img{
+    max-height: 150px;
+    width: 100%;
+}
+#slider-2{
+    max-height: 400px !important;
+    height: 400px;
+    width: 100%;
+}
+#slider-2 > .item > img, #slider-2 > .item > a > img{
+    max-height: 400px;
+    width: 100%;
+     height: 400px;
+}
+.align-center-vetical{
+    position: absolute;
+    top: 50%;
+}
+/*------- fadi in slider--------*/
+.carousel-fade .carousel-inner .item {
+  opacity: 0;
+  -webkit-transition-property: opacity;
+  -moz-transition-property: opacity;
+  -o-transition-property: opacity;
+  transition-property: opacity;
+}
+.carousel-fade .carousel-inner .active {
+  opacity: 1;
+}
+.carousel-fade .carousel-inner .active.left,
+.carousel-fade .carousel-inner .active.right {
+  left: 0;
+  opacity: 0;
+  z-index: 1;
+}
+.carousel-fade .carousel-inner .next.left,
+.carousel-fade .carousel-inner .prev.right {
+  opacity: 1;
+}
+.carousel-fade .carousel-control {
+  z-index: 2;
+}
+/*------------start of pofrush ha==*/
+#side-image{
+width: 100%;
+    max-height: 125px;
+}
+.shadow-box{
+    box-shadow: 0px 1px 7px 0px #777;
+    margin: 10px 0px;
+}
+
+.shadow-box .list-group-item{
+    padding: 15px;
+}
+.shadow-box .list-group-item a{
+    font-size: 17px;
+    color: #5cc369;
+    }
+    .shadow-box .list-group-item span{
+        font-size: 10px;
+        padding-top: 10px;
+        color: #999;
+        display: block;
+    }
+    .shadow-box .list-group-item i{
+        position: absolute;
+        top: 25%;
+        left: 20px;
+        font-size: 30px;
+        color:#5cc369;
+    }
+    .shadow-box .list-group-item a.news-item {
+        font-size: 14px;
+        color: #999;
+    }
+    .shadow-box .list-group-item a.news-item:hover {
+        color: #2345ff;
+    }
+    .shadow-box .list-group-item a.news-item span{
+       display: inline-block;
+    }
+    .shadow-box .list-group-item a.news-item i{
+       font-size: 14px;
+    color: #999;
+    position: relative;
+    margin-top: 6px;
+    /* margin-right: 7px; */
+    right: 2px;
+    /* top: 3px; */
+
+    }
+    .shadow-box .list-group-item a.news-item i:hover{
+        color: #2345ff;
+    }
+.list-group-item:first-child{
+    border-radius: 0px;
+}
+
+.rounded-span{
+    border: 1px solid #ccc;
+    border-radius: 50px;
+    padding: 10px 20px;
+    position: relative;
+    top: -20px;
+    background: #fff;
+    text-align: center;
+    right: 28px;
+}
+#headr-of-box
+{
+    text-align: center;
+    border-top: 1px solid #ccc;
+    margin-top: 20px;
+    padding: 10px 0px;
+}
+
+a.more{
+        color: #333;
+    position: relative;
+    background:#fff;
+    float: left;
+    padding-right: 10px;
+    top: -20px;
+    text-decoration: none;
+}
+a.more:hover{
+    color: #2345ff;
+}
+#por-forush{
+    padding-top: 20px;
+}
+
+/*-------------start jadid------*/
+.card .card-title {
+  font-size: 12px;
+  font-weight: 300;
+  padding: 1px 5px;
+  text-align: center;
+}
+.card .card-content .card-title a {
+ color: #777;
+    text-decoration: none;
+    text-align: center;
+}
+.card .card-content .card-title a:hover {
+    color: #428bca;;
+}
+#jadid{
+    padding-top: 20px;
+}
+#fave-card-item{
+    color: #999;
+}
+#star-span{
+    float: left;
+        color: #999;
+}
+.price{
+    text-align: center;
+    color: #31ca6b;
+    margin-top: 23px;
+    margin-bottom: 23px;
+}
+.details{
+    float: none;
+    text-align: center;
+    display: block;
+    font-size: 11px;
+    color: #999;
+    text-decoration: none !important;
+}
+/*-------star moshavereh---------*/
+#moshavereh{
+    padding: 30px 5px 30px 5px;
+}
+.border-left{
+           border-left: 1px solid #ddd;
+    padding: 0px 5px;
+    /*margin: 10px 0px 26px 0px;*/
+    font-size: 12px;
+    text-align: center;
+        }
+.border-left .card-content p span{
+    color: #2345ff;
+    padding-left: 5px;
+    font-size: 18px;
+}
+.border-left .card-content p a{
+    color: #2345ff;
+    text-decoration: none !important;
+}
+.border-left .card-content p {
+    color: #999;
+    
+}
+/*-----------star main--------------*/
+
+#main{
+    min-height: 500px;
+    
+}
+#main-content{
+    padding:0px;
+    float: left;
+    width: 100%;
+}
+.card:hover {
+  box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
+}
+/* cards-----------------------*/
+.card-panel {
+  -webkit-transition: box-shadow .25s;
+  transition: box-shadow .25s;
+  padding: 20px;
+  margin: 0.5rem 0 1rem 0;
+  border-radius: 2px;
+  background-color: #fff;
+
+}
+
+.card {
+    height: 247px;
+        border-top: 1px solid #ddd;
+  position: relative;
+  margin: 0.5rem 0 1rem 0;
+  background-color: #fff;
+  -webkit-transition: box-shadow .25s;
+  transition: box-shadow .25s;
+  border-radius: 2px;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.18), 0 2px 4px 0 rgba(0, 0, 0, 0.15);
+}
+
+
+
+.card .card-title.activator {
+  cursor: pointer;
+}
+
+
+.card.small,
+.card.medium,
+.card.large {
+  position: relative;
+}
+
+.card.small .card-image,
+.card.medium .card-image,
+.card.large .card-image {
+  max-height: 60%;
+  overflow: hidden;
+}
+
+.card.small .card-content,
+.card.medium .card-content,
+.card.large .card-content {
+  max-height: 40%;
+  overflow: hidden;
+}
+
+.card.small .card-action,
+.card.medium .card-action,
+.card.large .card-action {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.card.small {
+  height: 300px;
+}
+
+.card.medium {
+  height: 400px;
+}
+
+.card.large {
+  height: 500px;
+}
+
+.card .card-image {
+  position: relative;
+}
+
+.card .card-image img {
+  display: block;
+  border-radius: 2px 2px 0 0;
+  position: relative;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+}
+
+.card .card-image .card-title {
+  color: #fff;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 20px;
+}
+
+.card .card-content {
+  padding: 4px;
+  border-radius: 0 0 2px 2px;
+}
+
+
+
+
+.card .card-action {
+  position: relative;
+  background-color: inherit;
+  border-top: 1px solid rgba(160, 160, 160, 0.2);
+  padding: 20px;
+  z-index: 2;
+}
+
+.card .card-action a:not(.btn):not(.btn-large):not(.btn-floating) {
+  color: #ffab40;
+  margin-right: 20px;
+  -webkit-transition: color .3s ease;
+  transition: color .3s ease;
+  text-transform: uppercase;
+}
+
+.card .card-action a:not(.btn):not(.btn-large):not(.btn-floating):hover {
+  color: #ffd8a6;
+}
+
+.card .card-action + .card-reveal {
+  z-index: 1;
+  padding-bottom: 64px;
+}
+
+.card .card-reveal {
+  padding: 20px;
+  position: absolute;
+  background-color: #fff;
+  width: 100%;
+  overflow-y: auto;
+  top: 100%;
+  height: 100%;
+  z-index: 3;
+  display: none;
+}
+
+.card .card-reveal .card-title {
+  cursor: pointer;
+  display: block;
+}
+
+#toast-container {
+  display: block;
+  position: fixed;
+  z-index: 10000;
+}
+
+/*-------------end main-------------*/
+.back-to-top {
+ 
+background: none;
+ 
+margin: 0;
+ 
+position: fixed;
+ 
+bottom: 0;
+ 
+right: 0;
+ 
+width: 35px;
+ 
+height: 35px;
+ 
+z-index: 100;
+ 
+display: none;
+ 
+text-decoration: none;
+ 
+color: #3bc596;
+ transition: 0.2s;
+}
+.back-to-top:hover{
+    color: #2345ff;
+}
+.back-to-top:visited{
+    color: #3bc596;
+}
+ 
+  
+ 
+.back-to-top i {
+ 
+  font-size: 35px;
+ 
+}
+
+/*-start footer---------------*/
+.footer {
+            background: #fff;
+            color: #999;
+            border-top: 1px solid #ddd;
+        }
+#footer-div{
+    text-align: right;
+    padding-top: 20px ;
+}        
+#footer-div label{
+    display: block;
+    font-size: 11px;
+    color: #555;
+}
+#footer-div h6{
+    display: block;
+    font-size: 10px;
+    line-height: 2;
+    color: #999;
+}
+#footer-logo{
+    width: 50%;
+}
+#footer-div a{
+    display: block;
+    font-size: 10px;
+    color: #999;
+    padding: 0px;
+    text-decoration: none !important;
+}
+#footer-div p{
+    font-size: 10px;
+    color: #999;
+    padding: 0px;
+    
+}
+#news-register-btn{
+    font-size: 8px;
+    color: #999;
+    position: absolute;
+    top: 6px;
+    left: 1px;
+    border: none;
+    z-index: 3;
+}
+     
+#et-news-register{
+   border-radius: 5px;
+        padding: 2px;
+    font-size: 12px;
+    height: 32px;
+}   
+#news-div{
+    margin-bottom: 20px;
+}
+        #designer-div{
+            background-color: #777;
+            padding: 10px;
+            text-align: center;
+        }
+         #designer-div a{
+            color: #eee;
+            transition: 0.2s;
+         }
+         #designer-div a:hover{
+            color: #42baca;
+            text-decoration: none !important;
+         }
+         #designer-div label{
+            color: #eee;
+         }

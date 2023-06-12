@@ -1,0 +1,874 @@
+<!DOCTYPE html>
+<html lang="fa">
+
+<head>
+    <title>Mobile Store Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="icon"      type="images/png"      href="img/divar_logo.png">
+    <link rel="stylesheet" href="css/bootstrap.rtl.css">
+    <link rel="stylesheet" href="css/style.css?vertion=1">
+    <link rel="stylesheet" href="fonts/font-awesome/css/font-awesome.min.css">
+
+<body >
+
+	<div id="header-main" class="container-fluid">
+
+	
+		<div id="header-row1" class="container-fluid">
+			
+			<div id="header-row1-div" class="container">
+
+				<h5 id="brand" class="">فروشگاه اینترنتی</h5>
+
+			<div id="login">
+
+        		<div id="register" >ثبت نام</div>
+
+        		<div id="sign-in" >ورود</div>
+
+        	</div><!-- login-div !-->
+
+			</div><!-- end header-row1-div !-->
+
+		</div><!-- end header-row1 !-->	
+
+		<div class="container-fluid" id="header-row2">
+			
+			<div  class="container">
+
+			<div class="row">
+
+			<div id="logo-div" class="col-sm-2 col-md-2 col-lg-2">
+
+				<img id=logo-img src="images/logo4.jpg"/>
+
+			</div><!-- end logo-div !-->
+
+			<div  class="  col-sm-6 col-md-6 col-lg-6 ">
+
+			   <div id="search-div" class="input-group">
+
+			   <span id="search-span" class="input-group-btn" >
+
+				<button id="search-loading" type="button" class="btn btn-default">
+
+					<i class="fa fa-spinner fa-spin" style=""></i>
+					
+				</button><!--end loading-search-btn-!-->
+
+				<button id="search-btn" type="button" class="btn btn-default">
+
+					<i class="fa fa-search"></i>
+					
+				</button><!--end search-btn-!-->
+
+				</span>
+
+				<input  id="et-search" type="text" name="et-search" value="" placeholder="جستجو کنید ..." class="form-control input-lg search-autocomplete"><!-- end input-text !-->
+
+			</div><!-- end search-div !-->
+
+			</div><!-- end search-col  !-->
+
+			<div id="khrid-col" class=" col-sm-4 col-md-4 col-lg-4">
+				
+					<button id="kharid-btn" type="button" data-toggle="dropdown" data-loading-text="در حال بارگذاری..." class=" btn  btn-block btn-lg dropdown-toggle" aria-expanded="false">
+						<span id="sopping-icon">
+						<i class="fa fa-shopping-basket" aria-hidden="true"></i>
+						</span>
+						سبد خرید 
+						<span id="cart-total">0</span>
+					</button>
+					<ul class="dropdown-menu">
+				      <li><a href="#">HTML</a></li>
+				      <li><a href="#">CSS</a></li>
+				      <li><a href="#">JavaScript</a></li>
+				      <li class="divider"></li>
+				      <li><a href="#">About Us</a></li>
+				    </ul>
+				
+			</div><!-- end col of kharid !-->
+
+			</div><!-- end row of header-row2 !-->
+			
+		</div><!-- end header-row2  container!-->
+
+		</div><!-- end header-row2 flouid !-->
+		
+
+		<div class="container-fluid" id="header-row3">
+
+		<div class="row">
+
+			<div>
+
+			
+
+	<nav class="navbar navbar-default "  data-spy="affix" data-offset-top="197">
+
+<div class="navbar-header">
+
+			    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+			        <span class="icon-bar"></span>
+			        <span class="icon-bar"></span>
+			        <span class="icon-bar"></span> 
+			      </button>
+					
+			    <!-- end  pull left header-row3 !-->
+			   </div><!-- end navbar-header header-row3 !-->
+
+			
+				
+			    <div class="collapse navbar-collapse" id="myNavbar">
+			      <ul class="nav navbar-nav ">
+			        <li class="active"><a href="#">لپ تاپ	</a></li>
+			        <li><a href="#">موبایل</a></li>
+			        <li><a href="#">تبلت</a></li> 
+			        <li><a href="#">کامپیوتر</a></li>
+			        <li><a href="#">لولزم جانبی</a></li> 
+			        <li><a href="#">گجت هوشمند</a></li> 
+			        <li><a href="#">بازی و سرگرمی</a></li>  
+			        <li><a href="#">کنسول بازی</a></li>  
+			        <li><a href="#">خدمات بیمه ای</a></li>  
+			      </ul>
+			    </div><!-- end collapse navbar header-row3 !-->
+
+			   <div id="right-nav-div">
+			   	<div id="pishnahad" > 
+					<span id="pish-icon">
+						<i class="fa fa-star" aria-hidden="true"></i>
+					</span>پیشنهادات ویژه
+				</div><!-- end pishnahad header-row3 !-->
+				<div id="favorits" class="simple-link" > 
+					<span id="fav-icon">
+						<i class="fa fa-heart" aria-hidden="true"></i>
+					</span>علاقه مندیها
+				</div><!-- end favorites header-row3 !-->
+				<div id="guid"  class="simple-link"> 
+					<span id="fav-icon">
+						<i class="fa fa-info" aria-hidden="true"></i>
+					</span>راهنمای خرید
+				</div><!-- end guidance header-row3 !-->
+			   </div><!-- end righ-nav-div header-row3 !-->
+
+				
+
+				</nav>
+
+			
+			</div><!-- end container header-row3 !-->
+		</div><!-- end row of header-row3 !-->
+
+
+			
+		</div><!-- end fluid header-row3 !-->
+
+	</div><!-- end header-main !-->
+	
+
+	<!-- star main ============================================-!-->
+<div id="main" class="container-fluid">
+	<div class="row">
+
+	<!-- star sidbar ============================================-!-->
+
+	<!-- <div id="sidbar-div" class="col-sm-4 col-md-3 container-fluid">
+          <div id="list" >
+            
+          <div class="list-group">
+		    <a href="#" class="list-group-item active">موبایل</a>
+		    <a href="#" class="list-group-item">تبلت</a>
+		    <a href="#" class="list-group-item">لوازم جانبی</a>
+		    <a href="#" class="list-group-item">گجت هوشمند</a>
+		    <a href="#" class="list-group-item">بازی و سرگرمی</a>
+		    <a href="#" class="list-group-item">لپ تاپ</a>
+		    <a href="#" class="list-group-item">کامپیوتر</a>
+		    <a href="#" class="list-group-item">خدمات وبیمه</a>
+		  </div>
+
+          </div><! end list !-->
+       <!-- </div> !--><!-- end sidbar-div !-->
+    <!-- star content =========================================-!-->
+
+    <!-- star slider =========================================-!-->
+<div class="container">
+	
+	<div class="row">
+		
+		<div class="col-md-8">
+			
+			<div class="row">
+
+			<div  id="slider-container1" class="shadow-box ">
+				
+				<div id="myCarousel" class="carousel slide" data-ride="carousel">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+    <li data-target="#myCarousel" data-slide-to="1"></li>
+    <li data-target="#myCarousel" data-slide-to="2"></li>
+  </ol>
+
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner">
+    <div class="item active">
+      <img src="images/hero1.jpg" >
+    </div>
+
+    <div class="item">
+      <img src="images/hero2.jpg">
+    </div>
+
+    <div class="item">
+      <img src="images/hero4.jpg">
+    </div>
+  </div>
+
+  <!-- Left and right controls -->
+  <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+    <span class="align-center-vetical" >
+    	<i class="fa fa-chevron-left" aria-hidden="true"></i>
+    </span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#myCarousel" data-slide="next">
+    <span class="align-center-vetical">
+    	<i class="fa fa-chevron-right" aria-hidden="true"></i>
+    </span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+
+<div id="div-bottom-of-slider2" class="hidden-xs">
+  <ul>
+   <li><a href="#">اسکوتر</a></li>
+   <li><a href="#">کارت حافظه</a></li>
+   <li><a href="#">فلش مموری</a></li>
+   <li><a href="#">مودم همراه 4G</a></li>
+   <li><a href="#">لنوو</a></li>
+   <li><a href="#">ایسوس</a></li>
+  </ul>
+</div>
+   
+			</div><!-- end div of slider1 !-->
+
+
+	<div  id="slider-container2" class="shadow-box ">
+				
+				<div id="myCarousel" class=" carousel-fade carousel slide" data-ride="carousel">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+    <li data-target="#myCarousel" data-slide-to="1"></li>
+    <li data-target="#myCarousel" data-slide-to="2"></li>
+  </ol>
+
+  <!-- Wrapper for slides -->
+  <div  id="slider-2" class="carousel-inner">
+    <div class="item active">
+      <img src="images/hero1.jpg" >
+    </div>
+
+    <div class="item">
+      <img src="images/hero2.jpg">
+    </div>
+
+    <div class="item">
+      <img src="images/hero4.jpg">
+    </div>
+  </div>
+
+  <!-- Left and right controls -->
+  <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+    <span class="align-center-vetical" >
+    	<i class="fa fa-chevron-left" aria-hidden="true"></i>
+    </span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#myCarousel" data-slide="next">
+    <span class="align-center-vetical">
+    	<i class="fa fa-chevron-right" aria-hidden="true"></i>
+    </span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+
+
+			</div><!-- end div of slider2 !-->      
+				
+			</div><!-- end row of right sidbar !-->
+
+		</div><!-- end col  of  right sidbar !-->
+
+		<div class="col-md-4">
+			
+
+    <div id="main-content" class="col-sm-8 col-md-9 container-fluid ">
+    
+    
+          <div class="shadow-box">
+            <div class="list-group-item">
+               <a style="color: #f9822b;" href="#" >تحویل سریع</a>
+			         <span >کمتر از 24 ساعت
+               </span>
+                <i style="color: #f9822b;" class="fa fa-car" aria-hidden="true"></i>
+            </div>
+            <div class="list-group-item">
+                <a style="color: #2345ff;" href="#" >7 روز ضمانت بازگشت کالا</a>
+               <span >تا یک هفته کالای خود را مرجوع کنید.
+               </span>
+                <i style="color: #2345ff;" class="fa fa-clock-o" aria-hidden="true"></i>
+			   
+            </div>
+            <div class="list-group-item">
+               <a href="#" >ضمانت اصل بودن کالا</a>
+               <span> ارائه کالاهای اصل و معتبر 
+               </span>
+                <i class="fa fa-check-circle-o" aria-hidden="true"></i>
+            </div>
+            
+          </div><!-- end card calss of zemanat ==!-->
+
+          <div   class="shadow-box">
+            <div class="card-image">
+              <img id="side-image" src="images/hero1.jpg">
+            </div> 
+
+            </div><!-- end imafe of left sidbar!-->
+
+        <div class="shadow-box">
+            <div class="list-group-item">
+                <h4>آخرین های بلاگ
+                   <i style="color: #f9822b;" class="fa fa-rss" aria-hidden="true"></i>
+                </h4>
+                
+            </div>
+            <div class="list-group-item">
+               <a  id="news-item1" class="news-item" href="#" >
+                   <i class="fa fa-chevron-left" aria-hidden="true"></i>
+                تست بهترین آنتی ویروس‌ها
+                </a>
+            </div>
+            <div class="list-group-item">
+              <a  id="news-item1" class="news-item" href="#" >
+                   <i class="fa fa-chevron-left" aria-hidden="true"></i>
+                قابلیت Driving Mode در گوگل مپ
+                </a>
+            </div>
+            <div class="list-group-item">
+              <a  id="news-item1" class="news-item" href="#" >
+                   <i class="fa fa-chevron-left" aria-hidden="true"></i>
+                برای جلوگیری از بروز مشکل در بروزرسانی
+                </a>
+            </div>
+            <div class="list-group-item">
+              <a  id="news-item1" class="news-item" href="#" >
+                   <i class="fa fa-chevron-left" aria-hidden="true"></i>
+                مقایسه کیفیت دوربین گوشی های موبایل
+                </a>
+            </div>
+            <div class="list-group-item">
+              <a  id="news-item1" class="news-item" href="#" >
+                   <i class="fa fa-chevron-left" aria-hidden="true"></i>
+                راه مقابله با ویروس
+                </a>
+            </div>
+            
+          </div><!-- end card news calss==!-->
+         
+		
+
+     </div><!-- end main-content !-->
+
+		</div><!-- end col of left sidbar !-->
+	
+
+	</div><!-- end row of main content !-->
+	<div class="row">
+	
+	<div class="container" id="por-forush" >
+		<h5 id="headr-of-box">
+			<span class="rounded-span">پرفروش ترین ها</span>
+			<a class="more" href="#">بیشتر 
+			<i class="fa fa-arrow-left" aria-hidden="true"></i>
+			</a>
+
+		</h5>
+
+			   <div class="col-sm-3" >
+          <div class="card">
+          <div class="card-title">
+          <span id="fave-card-item">
+          	<i class="fa fa-heart-o" aria-hidden="true"></i>
+          </span>
+             <span id="star-span">
+             	<i class="fa fa-star-o" aria-hidden="true"></i>
+             	<i class="fa fa-star-o" aria-hidden="true"></i>
+             	<i class="fa fa-star-o" aria-hidden="true"></i>
+             	<i class="fa fa-star-o" aria-hidden="true"></i>
+             	<i class="fa fa-star-o" aria-hidden="true"></i>
+             </span>
+            </div>
+            <div class="card-image">
+            <a href="">
+              <img  src="images/del.jpg">
+              </a>
+            </div>
+            <div class="card-content">
+              <h6 class="card-title ">
+              <a href="#">
+              متن نمونه متن نمونه
+              متن نمونه
+              متن نمونه
+              </a>
+               </h6>
+              <p class="price">190,000 تومان</p>
+			   <a class=" simple-link details" href="">مشاهده جزئیات</a>
+		   </div>
+            
+          </div>
+        </div><!-- end  of col of card item forush!-->
+           <div class="col-sm-3" >
+          <div class="card">
+          <div class="card-title">
+          <span id="fave-card-item">
+          	<i class="fa fa-heart-o" aria-hidden="true"></i>
+          </span>
+             <span id="star-span">
+             	<i class="fa fa-star-o" aria-hidden="true"></i>
+             	<i class="fa fa-star-o" aria-hidden="true"></i>
+             	<i class="fa fa-star-o" aria-hidden="true"></i>
+             	<i class="fa fa-star-o" aria-hidden="true"></i>
+             	<i class="fa fa-star-o" aria-hidden="true"></i>
+             </span>
+            </div>
+            <div class="card-image">
+            <a href="">
+              <img  src="images/mob1.jpg">
+              </a>
+            </div>
+            <div class="card-content">
+              <h6 class="card-title ">
+              <a href="#">
+              متن نمونه متن نمونه
+              متن نمونه
+              متن نمونه
+              </a>
+               </h6>
+              <p class="price">190,000 تومان</p>
+			   <a class=" simple-link details" href="">مشاهده جزئیات</a>
+		   </div>
+            
+          </div>
+        </div><!-- end  of col of card item forush!-->
+		   <div class="col-sm-3" >
+          <div class="card">
+          <div class="card-title">
+          <span id="fave-card-item">
+          	<i class="fa fa-heart-o" aria-hidden="true"></i>
+          </span>
+             <span id="star-span">
+             	<i class="fa fa-star-o" aria-hidden="true"></i>
+             	<i class="fa fa-star-o" aria-hidden="true"></i>
+             	<i class="fa fa-star-o" aria-hidden="true"></i>
+             	<i class="fa fa-star-o" aria-hidden="true"></i>
+             	<i class="fa fa-star-o" aria-hidden="true"></i>
+             </span>
+            </div>
+            <div class="card-image">
+            <a href="">
+              <img  src="images/tab1.png">
+              </a>
+            </div>
+            <div class="card-content">
+              <h6 class="card-title ">
+              <a href="#">
+              متن نمونه متن نمونه
+              متن نمونه
+              متن نمونه
+              </a>
+               </h6>
+              <p class="price">190,000 تومان</p>
+			   <a class=" simple-link details" href="">مشاهده جزئیات</a>
+		   </div>
+            
+          </div>
+        </div><!-- end  of col of card item forush!-->
+         <div class="col-sm-3" >
+          <div class="card">
+          <div class="card-title">
+          <span id="fave-card-item">
+          	<i class="fa fa-heart-o" aria-hidden="true"></i>
+          </span>
+             <span id="star-span">
+             	<i class="fa fa-star-o" aria-hidden="true"></i>
+             	<i class="fa fa-star-o" aria-hidden="true"></i>
+             	<i class="fa fa-star-o" aria-hidden="true"></i>
+             	<i class="fa fa-star-o" aria-hidden="true"></i>
+             	<i class="fa fa-star-o" aria-hidden="true"></i>
+             </span>
+            </div>
+            <div class="card-image">
+            <a href="">
+              <img  src="images/comp2.png">
+              </a>
+            </div>
+            <div class="card-content">
+              <h6 class="card-title ">
+              <a href="#">
+              متن نمونه متن نمونه
+              متن نمونه
+              متن نمونه
+              </a>
+               </h6>
+              <p class="price">190,000 تومان</p>
+			   <a class=" simple-link details" href="">مشاهده جزئیات</a>
+		   </div>
+            
+          </div>
+        </div><!-- end  of col of card item forush!-->
+
+	</div><!-- end  of forush col !-->
+
+	</div><!-- end row of forush content !-->
+
+	<div class="row">
+
+	<div class="container" id="jadid" >
+		<h5 id="headr-of-box">
+			<span class="rounded-span">جدیدترین ها</span>
+			<a class="more" href="#">بیشتر 
+			<i class="fa fa-arrow-left" aria-hidden="true"></i>
+			</a>
+
+		</h5>
+
+		<div class="col-sm-3" >
+          <div class="card">
+          <div class="card-title">
+          <span id="fave-card-item">
+          	<i class="fa fa-heart-o" aria-hidden="true"></i>
+          </span>
+             <span id="star-span">
+             	<i class="fa fa-star-o" aria-hidden="true"></i>
+             	<i class="fa fa-star-o" aria-hidden="true"></i>
+             	<i class="fa fa-star-o" aria-hidden="true"></i>
+             	<i class="fa fa-star-o" aria-hidden="true"></i>
+             	<i class="fa fa-star-o" aria-hidden="true"></i>
+             </span>
+            </div>
+            <div class="card-image">
+            <a href="">
+              <img  src="images/comp2.png">
+              </a>
+            </div>
+            <div class="card-content">
+              <h6 class="card-title ">
+              <a href="#">
+              متن نمونه متن نمونه
+              متن نمونه
+              متن نمونه
+              </a>
+               </h6>
+              <p class="price">190,000 تومان</p>
+			   <a class=" simple-link details" href="">مشاهده جزئیات</a>
+		   </div>
+            
+          </div>
+        </div><!-- end  of col of card item jadid !-->
+        <div class="col-sm-3" >
+          <div class="card">
+          <div class="card-title">
+          <span id="fave-card-item">
+          	<i class="fa fa-heart-o" aria-hidden="true"></i>
+          </span>
+             <span id="star-span">
+             	<i class="fa fa-star-o" aria-hidden="true"></i>
+             	<i class="fa fa-star-o" aria-hidden="true"></i>
+             	<i class="fa fa-star-o" aria-hidden="true"></i>
+             	<i class="fa fa-star-o" aria-hidden="true"></i>
+             	<i class="fa fa-star-o" aria-hidden="true"></i>
+             </span>
+            </div>
+            <div class="card-image">
+            <a href="">
+              <img  src="images/mob1.jpg">
+              </a>
+            </div>
+            <div class="card-content">
+              <h6 class="card-title ">
+              <a href="#">
+              متن نمونه متن نمونه
+              متن نمونه
+              متن نمونه
+              </a>
+               </h6>
+              <p class="price">190,000 تومان</p>
+			   <a class=" simple-link details" href="">مشاهده جزئیات</a>
+		   </div>
+            
+          </div>
+        </div><!-- end  of col of card item jadid !-->
+        
+        <div class="col-sm-3" >
+          <div class="card">
+          <div class="card-title">
+          <span id="fave-card-item">
+          	<i class="fa fa-heart-o" aria-hidden="true"></i>
+          </span>
+             <span id="star-span">
+             	<i class="fa fa-star-o" aria-hidden="true"></i>
+             	<i class="fa fa-star-o" aria-hidden="true"></i>
+             	<i class="fa fa-star-o" aria-hidden="true"></i>
+             	<i class="fa fa-star-o" aria-hidden="true"></i>
+             	<i class="fa fa-star-o" aria-hidden="true"></i>
+             </span>
+            </div>
+            <div class="card-image">
+            <a href="">
+              <img  src="images/del.jpg">
+              </a>
+            </div>
+            <div class="card-content">
+              <h6 class="card-title ">
+              <a href="#">
+              متن نمونه متن نمونه
+              متن نمونه
+              متن نمونه
+              </a>
+               </h6>
+              <p class="price">190,000 تومان</p>
+			   <a class=" simple-link details" href="">مشاهده جزئیات</a>
+		   </div>
+            
+          </div>
+        </div><!-- end  of col of card item jadid !-->
+        <div class="col-sm-3" >
+          <div class="card">
+          <div class="card-title">
+          <span id="fave-card-item">
+          	<i class="fa fa-heart-o" aria-hidden="true"></i>
+          </span>
+             <span id="star-span">
+             	<i class="fa fa-star-o" aria-hidden="true"></i>
+             	<i class="fa fa-star-o" aria-hidden="true"></i>
+             	<i class="fa fa-star-o" aria-hidden="true"></i>
+             	<i class="fa fa-star-o" aria-hidden="true"></i>
+             	<i class="fa fa-star-o" aria-hidden="true"></i>
+             </span>
+            </div>
+            <div class="card-image">
+            <a href="">
+              <img  src="images/tab1.png">
+              </a>
+            </div>
+            <div class="card-content">
+              <h6 class="card-title ">
+              <a href="#">
+              متن نمونه متن نمونه
+              متن نمونه
+              متن نمونه
+              </a>
+               </h6>
+              <p class="price">190,000 تومان</p>
+			   <a class=" simple-link details" href="">مشاهده جزئیات</a>
+		   </div>
+            
+          </div>
+        </div><!-- end  of col of card item jadid !-->
+
+	</div><!-- end  of JADID col !-->
+		
+	</div><!-- end row of jadid content !-->
+
+	<div class="row">
+		<div class="container" id="moshavereh" >
+
+			<div class="col-sm-4" >
+          <div class="border-left">
+           
+            <div class="card-content">
+              
+              <p>
+              	<span>
+              		<i class="fa fa-question-circle-o" aria-hidden="true"></i>	
+              	</span>
+              	<a href="#" >نیاز به مشاور دارید؟</a>
+              </p>
+			   <p>در صورت نیاز به مشاوره خرید از فروشگاه اینترنتی با ما در ارتباط باشید.</p>
+		   </div>
+      
+          </div>
+        </div><!-- end  of col of card item moshavereh !-->
+			
+			<div class="col-sm-4" >
+          <div class="border-left">
+           
+            <div class="card-content">
+              
+              <p>
+              	<span>
+              		<i class="fa fa-book" aria-hidden="true"></i>	
+              	</span>
+              	<a href="#" >راهنمای ثبت سفارش</a>
+              </p>
+			   <p>شما را با نحوه خرید به صورت ساده و روان آشنا می کنیم تا لذت خرید اینترنتی را در فضایی کاملاً امن و راحت تجربه نمایید.</p>
+		   </div>
+      
+          </div>
+        </div><!-- end  of col of card item moshavereh !-->
+        <div class="col-sm-4" >
+          <div style="border:none;" class="border-left">
+           
+            <div class="card-content">
+              
+              <p>
+              	<span>
+              		<i class="fa fa-smile-o" aria-hidden="true"></i>	
+              	</span>
+              	<a href="#" >با خیالی آسوده خرید کنید...</a>
+              </p>
+			   <p>دارای نماد اعتماد الکترونیکی از مرکز توسعه ی تجارت الکترونیکی وزارت صنعت و معدن.</p>
+		   </div>
+      
+          </div>
+        </div><!-- end  of col of card item moshavereh !-->
+		</div><!-- end col of moshavereh  !-->
+	</div><!-- end row of moshavereh content !-->
+
+</div><!-- end main content !-->
+
+
+<!-- star left sidbar!-->
+
+
+	</div><!-- end main-row !-->
+</div><!-- end main !-->
+	
+
+<!-- star footer ============================================-!-->
+<footer class=" container-fluid footer col-sm-12  text-center">
+  
+  <div class="container" id="footer-div">
+
+  <div class="row">
+  	
+  	<div class="col-sm-3">
+  		<div >
+  		<img id="footer-logo" src="images/logo4.jpg"/>
+              <h6>
+              	تمامی کالاها و خدمات این فروشگاه  حسب مورد دارای مجوزهای لازم از مراجع مربوطه می باشند و فعالیت های این سایت تابع قوانین و مقررات است.
+              </h6>
+			   
+		   </div>
+  	</div><!-- endcol-5 !-->
+
+  	<div class="col-sm-2 ">
+  	<label>اطلاعات</label>
+  		<a href="#" class="simple-link">
+  			درباره ما
+  		</a>
+  		<a href="#" class="simple-link">
+  			حریم خصوصی
+  		</a>
+  		<a href="#" class="simple-link">
+  			شرایط استفاده
+  		</a>
+  	</div><!-- endcol-1 !-->
+  	<div class="col-sm-2 ">
+  		<label>سایر خدمات</label>
+  		<a href="#" class="simple-link">
+  			تولید کنندگان
+  		</a>
+  		<a href="#" class="simple-link">
+  			کارت هدیه
+  		</a>
+  		<a href="#" class="simple-link">
+  			بازاریابی
+  		</a>
+  		<a href="#" class="simple-link">
+  			محصولات ویژه
+  		</a>
+  		<a href="#" class="simple-link">
+  			تماس با ما
+  		</a>
+  		<a href="#" class="simple-link">
+  			استرداد محصول
+  		</a>
+  		<a href="#" class="simple-link">
+  		نقشه سایت
+  		</a>
+  	</div><!-- endcol-1 !-->
+  	<div class="col-sm-2 ">
+  		<label>حساب کاربری</label>
+  		<a href="#" class="simple-link">
+  			حساب کاربری
+  		</a>
+  		<a href="#" class="simple-link">
+  			تاریخچه سفارشات
+  		</a>
+  		<a href="#" class="simple-link">
+  			لیست دلخواه
+  		</a>
+  		<a href="#" class="simple-link">
+  			اشتراک خبرنامه
+  		</a>
+  	</div><!-- endcol-1 !-->
+  	<div class="col-sm-3">
+  		<label>عضویت در خبرنامه</label>
+  		<div id="news-div" class="input-group">
+
+<p>
+	برای دریافت آخرین خبرها و پیشنهادات ویژه در خبرنامه ما عضو شوید...
+</p>
+
+			   
+
+				<input  id="et-news-register" type="text" name="et-news-register" value="" placeholder=" ایمیل شما ..." class="form-control input-lg "><!-- end input-text !-->
+				<span id="news-span" class="input-group-btn" >
+
+				<button id="news-register-btn" type="button" class="btn btn-default">
+					<i class="fa fa-chevron-left"></i>
+					
+				</button><!--end 
+
+registr news-btn-!-->
+
+				</span>
+			</div><!-- end news-div !-->
+  		
+  	</div><!-- endcol-4 !-->
+
+
+  </div><!-- end row of footer !-->
+</div>
+  
+<div id="designer-div" class="row">
+  	<div class=" col-sm-6">
+  	<label style="font-size: 10px;" >
+  		طراحی و پیاده سازی توسط 
+  	</label>
+  	
+  		 <a href="http://developer.yourgig.ir">
+  		 	developer.yourgig.ir
+  		 </a>
+  	</div>
+  	<div class="col-sm-6" style="font-size: 10px;" >
+  		<label>Copyright 2017 developer.yourgig.ir</label>
+  	</div>
+  </div>
+<script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap-rtl.js"></script>
+    <script type="text/javascript" src="js/user.js"></script>
+
+
+</footer>
+<a href="#" class="back-to-top" style="display: inline;">
+ 
+<i class="fa fa-arrow-circle-up"></i>
+ 
+</a>
+</body>
+</html>
